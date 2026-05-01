@@ -1,18 +1,4 @@
-users: list = [
-    {'username': 'oliwia', 'location': 'łódź', 'posts': 1,
-     'usermessage': ['życzenia1', 'kocham legie', 'sprzeam opla', 'kiwi1']},
-    {'username': 'paweł', 'location': 'ostróda', 'posts': 2,
-     'usermessage': ['życzenia2', 'kocham legie1', 'sprzeam opla1']},
-    {'username': 'eliza', 'location': 'radom', 'posts': 3, 'usermessage': ['życzenia3', 'kocham legie2']},
-    {'username': 'filip', 'location': 'dęblin', 'posts': 4,
-     'usermessage': ['życzenia4', 'kocham legie3', 'sprzeam opla3', 'kiwi3']},
-]
-
-
-def read_data(user_data: list) -> None:
-    for user in user_data:
-        print(
-            f'twój znajomy {user['username']} z miejscowości {user['location']} opublikował {user['posts']} wiadomości. Ostatnia wiaomość {user['usermessage'][-1]}')
-
+from mapbook_iib.model import users
+from mapbook_iib.controller import read_data
 
 read_data(users[1:])
