@@ -1,1 +1,0 @@
-print('geodezja i geoinformatyka rządzi111')
