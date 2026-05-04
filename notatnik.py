@@ -22,5 +22,15 @@ users: list = [
 # users.remove({'username': 'oliwia', 'location': 'łódź', 'posts': 1,
 #      'usermessage': ['życzenia1', 'kocham legie', 'sprzeam opla', 'kiwi1']})
 
+def update_user(users_data: list) -> None:
+    name = input('Podaj imię użytkownika do zmiany: ')
+
+    for user in users_data:
+        if user['username'] == name:
+            user['username'] = input('Podaj nowe imię: ')
+            user['location'] = input('Podaj nową lokalizację: ')
+            user['posts'] = int(input('Podaj liczbę postów: '))
 
 
+update_user(users)
+print(users)
