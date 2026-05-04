@@ -1,5 +1,5 @@
-def wyswietl_napis(zmienna_1:str)->None:
-    print('cos')
-    print(zmienna_1)
+moja_lista_na_sok=['banan', 'marchew']
+print(moja_lista_na_sok)
 
-wyswietl_napis(zmienna_1='okulary')
+moja_lista_na_sok=['jabłko']
+print(moja_lista_na_sok)
