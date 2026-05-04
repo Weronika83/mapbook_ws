@@ -1,12 +1,13 @@
 from mapbook_iib.model import users
-from mapbook_iib.controller import read_data, add_user, remove_user, update_user
+from mapbook_iib.controller import read_data, add_user, remove_user, update_user, get_mapa
 
 while True:
-    print('0 -zakończ program')
+    print('0 - zakończ program')
     print('1 - wyświetl znajomych')
     print('2 - dodaj znajomego')
     print('3 - usuń znajomego')
-    print('4 - zmodyfikuj ane znajomego')
+    print('4 - zmodyfikuj dane znajomego')
+    print('5 - wyświetl mapę znajomych')
 
     choose = input('wybierz opcję: ')
     if choose == '0':
@@ -16,6 +17,8 @@ while True:
     if choose == '2':
         add_user(users)
     if choose == '3':
-        remove_user(users)
-        if choose == '4':
-            update_user(users)
+        read_data(users)
+    if choose == '4':
+        update_user(users)
+    if choose == '5':
+        get_mapa(users)
