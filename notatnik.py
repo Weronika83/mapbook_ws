@@ -1,5 +1,7 @@
-def wyswietl_napis(zmienna_1:str)->None:
-    print('cos')
-    print(zmienna_1)
 
-wyswietl_napis(zmienna_1='okulary')
+users: list = [
+    {'username': 'oliwia', 'location': 'Warszawa', 'posts': 1,
+     'usermessage': ['życzenia1', 'kocham legie', 'sprzeam opla', 'kiwi1']},    {'username': 'ola', 'location': 'Lublin', 'posts': 1,
+     'usermessage': ['życzenia1', 'kocham legie', 'sprzeam opla', 'kiwi1']},
+
+]
